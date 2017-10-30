@@ -1,5 +1,5 @@
 package com.example.pc.projectdoibong.Modols;
-
+//tên packpage sai nhé, anh hay dùng là Models
 /**
  * Created by PC on 10/14/2017.
  */

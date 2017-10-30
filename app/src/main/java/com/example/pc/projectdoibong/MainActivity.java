@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private void addControls() {
         lvLogo = (ListView) findViewById(R.id.listviewLogo);
         dsDoiBong = new ArrayList<>();
+
+        //Nên viết riêng một phương thức tạo dữ liệu giả
         dsDoiBong.add(new DoiBong("Asenal","Anh",R.drawable.asenal));
         dsDoiBong.add(new DoiBong("Barcelona","Tây Ban Nha",R.drawable.bacsa));
         dsDoiBong.add(new DoiBong("Bayern Munich","Đức",R.drawable.bayern));
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         doiBongAdapter = new  DoiBongAdapter(this,R.layout.item_doibong,dsDoiBong);
         lvLogo.setAdapter(doiBongAdapter);
 
-
+//Không được trống 2 dòng, 1 dòng thôi
     }
 
     private void addEvents() {

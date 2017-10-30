@@ -1,5 +1,5 @@
 package com.example.pc.projectdoibong.adapter;
-
+//Tên packpage để ở số nhiều nhé, là adapters
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,13 +14,17 @@ import com.example.pc.projectdoibong.R;
 import java.util.List;
 
 /**
- * Created by PC on 10/14/2017.
+ * Created by PC on 10/14/2017. Sửa lại tên dev đi nhé
  */
 
 public class DoiBongAdapter extends ArrayAdapter<DoiBong> {
+    //Kiếm cái tên nào hay hơn đi, khuyến khích dùng tiếng Anh
     Activity context;
     int resource;
-    List<DoiBong> objects;
+    List<DoiBong> objects;//đổi tên
+    //Chuyển về private hết nhé
+    //Kết thúc phần khai báo biến, xuống cách một dòng rồi viết tiếp
+
     public DoiBongAdapter(Activity context, int resource, List<DoiBong> objects) {
         super(context, resource, objects);
         this.context = context;
@@ -29,6 +33,7 @@ public class DoiBongAdapter extends ArrayAdapter<DoiBong> {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
+        //trước khi làm việc, nên kiểm tra tính hợp lệ của position
         LayoutInflater inflater = this.context.getLayoutInflater();
         View row = inflater.inflate(resource,null);
 
@@ -41,7 +46,7 @@ public class DoiBongAdapter extends ArrayAdapter<DoiBong> {
         txtTenCauLacBo.setText(doiBong.getTenCauLacBo());
         txtQuocTich.setText(doiBong.getQuocTich());
 
-
+        //Không được để trống 2 dòng
         return row;
     }
 }
