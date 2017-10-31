@@ -1,0 +1,5 @@
+-Màu sắc không phù hợp. Trong file colors có 3 màu cơ bản, em nên dùng 3 màu đó và thêm một số màu khác gần với nó cho phù hợp. không sử dụng màu tùy tiện
+-TextView: height thường set là wrap content, rồi set size chữ. Chứ ít khi set cứng một số nào đó.
+-File Manifest: có một dòng trống dùng để làm gì, có cần thiết không?
+-Về git anh thấy em cũng tạm ok rồi.
+-Chấm điểm: Phần code được 4/5 điểm. Git được 4/5 điểm. Tổng 8/10 điểm.
